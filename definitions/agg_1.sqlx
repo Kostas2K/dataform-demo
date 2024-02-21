@@ -1,0 +1,7 @@
+config {
+    type: "table",
+    description: "Example of aggregation"
+}
+
+SELECT SUM(number) as sum_total
+FROM ${ref('source_table')}
